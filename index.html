@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/4252212034.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            var topBtn = document.getElementById("topButton");
+            
+            function topFunction() {
+                document.documentElement.scrollTop = 0;
+            }
+
+            topBtn.addEventListener('click', topFunction);
+        })
+        </script>
+    </head>
+
+    <body>
+        <div class="navBar">
+            <button style="float:left"><i class="fa-solid fa-house"></i></button>
+            <button><i class="fa-solid fa-circle-user"></i>ABOUT ME</button>
+            <button><i class="fa-solid fa-briefcase"></i>PORTFOLIO</button>
+            <button><i class="fa-solid fa-envelope"></i>CONTACT</button>
+        </div>
+    </body>
+
+    <head>
+            <div class="homeImage">
+                <div class="imageText">
+                    <h1 style="font-size:3vw">Hi, I am Phillip Truong</h1>
+                    <h4 style="font-size:1vw">and this is my homepage</h4>
+                </div>
+            </div>
+    </head>
+
+    <body>
+        <div class="info">
+            <h3>ABOUT ME</h3>
+            <div>
+                <p>
+                    My name is Phillip Truong, and I am a full-stack developer, production artist, and audio engineer. <br>
+                    I've taken myself down a path where I can turn my passions into a full-time career. <br>
+                    Here, you will discover some of my most passionate projects that I've output for small and local-owned businesses in the greater Salt Lake area. <br>
+                    To get an understanding of my commitment, please feel free to explore my social media handles to get a grasp of how I manage my time to maximize my efficiency.
+                </p>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/phillip-t-010957102/" target="_blank"><img id="socialMedia" src="linkedin.png" alt="LinkedIn Logo"></a>
+                <a href="https://www.instagram.com/secret_asian_man/" target="_blank"><img id="socialMedia" src="instagram.png" alt="Instagram Logo"></a>
+                <a href="https://www.youtube.com/channel/UCVs3ecwtqUufqrBqZeYE71Q" target="_blank"><img id="socialMedia" src="youtube.png" alt="Youtube Logo"></a>
+                <a href="https://www.tiktok.com/@secretasianman19" target="_blank"><img id="socialMedia" src="tiktok.png" alt="TikTok Logo Round"></a>
+            </div>
+        </div>
+
+        <div class="info2">
+            <h3>PORTFOLIO</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <div class="quarterBlock">
+                <img src="Shugenja Racing.JPG" id="portfolio2k"><br>
+                <h3> Shugenja Racing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="quarterBlock">
+                <img src="Song's Nails.JPG" id="portfolio2k"><br>
+                <h3>Song's Nails</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="quarterBlock">
+                <img src="melina.jpeg" id="portfolio"><br>
+                <h3>Melina</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="quarterBlock">
+                <img src="ranni.jpg" id="portfolio">
+                <h3>Ranni</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+        </div>
+
+        <div class="info">
+            <h3>CONTACT</h3>
+            <p>Get in touch with me!</p>
+                <div id="contact">
+                    <p><i class="fa-solid fa-location-dot"></i>Salt Lake City, US</p>
+                    <p><i class="fa-solid fa-comment-dots"></i>Phone: +18019153742</p>
+                    <p><i class="fa-solid fa-envelope"></i>Email: Phillipxtr@gmail.com</p>
+                </div>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <input id="message" type="text" placeholder="Message">
+                <input type="submit" value="SEND MESSAGE">
+            </form>
+        </div> 
+
+        <div class="footer">
+            <button id="topButton" type="button"><i class="fa-solid fa-arrow-up"></i>To the top</button>
+                <div id="footerIcons">
+                    <a href="https://www.linkedin.com/in/phillip-t-010957102/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/secret_asian_man/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCVs3ecwtqUufqrBqZeYE71Q" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@secretasianman19" target="_blank"><i class="fa-brands fa-tiktok"></i>
+                    <a href="https://www.facebook.com/phillip.truong.12/" target="_blank"></href><i class="fa-brands fa-facebook-f"></i></a>
+
+                </div>
+            <p>Powered by Test Site</p>
+        </div>
+    </body>
+</html>
