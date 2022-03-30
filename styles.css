@@ -61,9 +61,9 @@
      * prefixes as well as the official syntax for now. Remember, tools like 
      * CSS Please are your friends!
      */
-    -webkit-animation: myOrbit 20s linear infinite; /* Chrome, Safari 5 */
-       -moz-animation: myOrbit 20s linear infinite; /* Firefox 5-15 */
-         -o-animation: myOrbit 20s linear infinite; /* Opera 12+ */
+    -webkit-animation: myOrbit 60s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: myOrbit 60s linear infinite; /* Firefox 5-15 */
+         -o-animation: myOrbit 60s linear infinite; /* Opera 12+ */
             animation: myOrbit 60s linear infinite; /* Chrome, Firefox 16+, 
                                                       IE 10+, Safari 5 */
     
@@ -115,9 +115,9 @@
      * prefixes as well as the official syntax for now. Remember, tools like 
      * CSS Please are your friends!
      */
-    -webkit-animation: myOrbit2 20s linear infinite; /* Chrome, Safari 5 */
-       -moz-animation: myOrbit2 20s linear infinite; /* Firefox 5-15 */
-         -o-animation: myOrbit2 20s linear infinite; /* Opera 12+ */
+    -webkit-animation: myOrbit2 60s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: myOrbit2 60s linear infinite; /* Firefox 5-15 */
+         -o-animation: myOrbit2 60s linear infinite; /* Opera 12+ */
             animation: myOrbit2 60s linear infinite; /* Chrome, Firefox 16+, 
                                                       IE 10+, Safari 5 */
     
@@ -169,9 +169,9 @@
      * prefixes as well as the official syntax for now. Remember, tools like 
      * CSS Please are your friends!
      */
-    -webkit-animation: myOrbit3 20s linear infinite; /* Chrome, Safari 5 */
-       -moz-animation: myOrbit3 20s linear infinite; /* Firefox 5-15 */
-         -o-animation: myOrbit3 20s linear infinite; /* Opera 12+ */
+    -webkit-animation: myOrbit3 60s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: myOrbit3 60s linear infinite; /* Firefox 5-15 */
+         -o-animation: myOrbit3 60s linear infinite; /* Opera 12+ */
             animation: myOrbit3 60s linear infinite; /* Chrome, Firefox 16+, 
                                                       IE 10+, Safari 5 */
     
@@ -223,9 +223,9 @@
      * prefixes as well as the official syntax for now. Remember, tools like 
      * CSS Please are your friends!
      */
-    -webkit-animation: myOrbit4 20s linear infinite; /* Chrome, Safari 5 */
-       -moz-animation: myOrbit4 20s linear infinite; /* Firefox 5-15 */
-         -o-animation: myOrbit4 20s linear infinite; /* Opera 12+ */
+    -webkit-animation: myOrbit4 60s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: myOrbit4 60s linear infinite; /* Firefox 5-15 */
+         -o-animation: myOrbit4 60s linear infinite; /* Opera 12+ */
             animation: myOrbit4 60s linear infinite; /* Chrome, Firefox 16+, 
                                                       IE 10+, Safari 5 */
     
