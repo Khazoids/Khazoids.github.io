@@ -1,35 +1,38 @@
-body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway", sans-serif;
-}
-
-h3 {
-    margin-bottom: 25px;
-}
-
-input[type=text] {
+.backgroundImage {
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
     position: relative;
-    padding: 18px 12px;
-    margin: 8px;
+    z-index: 1;
+}
+
+.carouselHeight{
     width: 100%;
-    display: inline-block;
+    max-height: 200px !important;
 }
 
-input[type=submit] {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 12px;
-    margin: 8px 10px;
-    float: left;
-    text-align: center;
+#parent {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: transform 0.7s linear;
 }
 
-.navBar {
-    background-color: white;
-    color: black;
-    text-align: right;
-    position: sticky;
-    top: 0;
+#child {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transform: rotate(0deg);
+    transition: transform 0.7s linear;
+    top: -40px;
+    left: 460px;
+}
+
+.box-shadow {
     box-shadow:
     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -38,138 +41,3 @@ input[type=submit] {
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
-
-.navBar > button {
-    color: black;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    padding: 20px 30px; 
-    text-transform: uppercase;
-    background: rgba(255, 255, 255, 0);
-    border: none;
-    transition-duration: 0.5s;
-    text-align: center;
-    overflow: hidden;
-}
-
-i {
-    padding-right: 10px;
-}
-
-.navBar > button:hover {
-    background-color: rgb(65, 65, 65);
-    color: white;
-}
-
-.homeImage {
-    background-image: url("DSC02348.jpg");
-    background-color: "cccccc";
-    background-position: 50% 30%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1000px;
-    position: relative;
-    z-index: -1;
-}
-
-.imageText {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.info {
-    background-color:white;
-    display: block;
-    height: 100%;
-    padding: 50px 16px;
-    font-size: 16px;
-    color: black;
-    text-align: center;
-
-}
-
-.info2 {
-    background-color: rgb(184, 182, 182);
-    display: block;
-    overflow: hidden;
-    padding: 50px 16px;
-    font-size: 16px;
-    color: black;
-    text-align: center;
-
-}
-
-
-.quarterBlock {
-    float: left;
-    width: 25%;
-    display: block;
-}
-
-.quarterBlock > h3 {
-    padding: 10px;
-}
-
-#contact {
-    text-align: left;
-    padding: 0px 10px;
-}
-
-#portfolio2k {
-    width: 99%;
-    height: auto;
-}
-
-#portfolio {
-    width: 99%;
-    max-height: 316px;
-}
-
-#socialMedia {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-    padding: 20px 10px;
-    background: transparent;
-    left: 0px;
-    display: inline-block;
-    
-}
-
-#topButton {
-    display: block;
-    margin:auto;
-    background-color: white;
-    padding: 10px 25px;
-    border: none;
-    text-align: left;
-}
-#topButton:hover {
-    background-color: rgb(65, 65, 65);
-    color: white;
-}
-
-#footerIcons {
-    padding: 15px;
-    text-align: center;
-    font-size: 15px;
-}
-
-#footerIcons > a {
-    text-decoration: none;
-    color: inherit;
-}
-.footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 15px;
-    padding: 50px 16px;
-    display: block;
-    margin-top: 40px;
-}
-
