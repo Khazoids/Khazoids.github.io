@@ -1,3 +1,24 @@
+input[type=checkbox] {
+    display: none;
+    cursor: pointer;
+}
+
+input[type=checkbox]:hover + h1:hover {
+    cursor: pointer;
+}
+
+h1 {
+    transition: transform 0.50s ease;
+}
+
+
+input[type=checkbox]:checked + label > div > h1{
+    transform: scale(2);
+    transition: transform 0.50s ease; 
+}
+
+
+
 .backgroundImage {
     background-position: 50% 30%;
     background-repeat: no-repeat;
@@ -5,21 +26,6 @@
     height: 75vh;
     position: relative;
     z-index: 1;
-}
-
-.carouselHeight{
-    width: 100%;
-    max-height: 200px !important;
-}
-
-#parent {
-    position: relative;
-    width: 1000px;
-    height: 1000px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    transform: rotate(0deg);
-    transition: transform 0.7s linear;
 }
 
 .box-shadow {
@@ -42,6 +48,46 @@
     0px -99px 100px rgba(0, 0, 0, 0.1);
 }
 
+.zoom-out1 {  
+      
+    animation: zoom-out 0.5s ease infinite;
+}
+
+@keyframes zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(0,0);
+    }
+}
+
+.zoom-in {
+  animation: zoom-in 0.5s ease infinite;
+}
+@keyframes zoom-in {
+    0% {
+        transform: scale(0,0);
+    }
+    100%
+    {
+        transform: scale(1,1);
+    }
+}
+
+
+
+#parent {
+  position: relative;
+  width: 1000px;
+  height: 1000px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: transform 0.7s linear;
+}
+
 .child {
     
     width: 80px;
@@ -54,6 +100,62 @@
        -moz-animation: myOrbit 60s linear infinite; /* Firefox 5-15 */
          -o-animation: myOrbit 60s linear infinite; /* Opera 12+ */
             animation: myOrbit 60s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+    
+    
+    
+}
+
+.child2 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 460px;
+    top: 460px;
+    
+
+    -webkit-animation: myOrbit2 60s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: myOrbit2 60s linear infinite; /* Firefox 5-15 */
+         -o-animation: myOrbit2 60s linear infinite; /* Opera 12+ */
+            animation: myOrbit2 60s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+    
+    
+    
+}
+
+.child3 {
+  
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 460px;
+    top: 460px;
+    
+
+   
+    -webkit-animation: myOrbit3 60s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: myOrbit3 60s linear infinite; /* Firefox 5-15 */
+         -o-animation: myOrbit3 60s linear infinite; /* Opera 12+ */
+            animation: myOrbit3 60s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+    
+    
+    
+}
+
+.child4 {
+    
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 460px;
+    top: 460px;
+    
+    -webkit-animation: myOrbit4 60s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: myOrbit4 60s linear infinite; /* Firefox 5-15 */
+         -o-animation: myOrbit4 60s linear infinite; /* Opera 12+ */
+            animation: myOrbit4 60s linear infinite; /* Chrome, Firefox 16+, 
                                                       IE 10+, Safari 5 */
     
     
@@ -80,25 +182,6 @@
     to   { transform: rotate(360deg) translateX(500px) rotate(-360deg); }
 }
 
-.child2 {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    left: 460px;
-    top: 460px;
-    
-
-    -webkit-animation: myOrbit2 60s linear infinite; /* Chrome, Safari 5 */
-       -moz-animation: myOrbit2 60s linear infinite; /* Firefox 5-15 */
-         -o-animation: myOrbit2 60s linear infinite; /* Opera 12+ */
-            animation: myOrbit2 60s linear infinite; /* Chrome, Firefox 16+, 
-                                                      IE 10+, Safari 5 */
-    
-    
-    
-}
-
-
 @-webkit-keyframes myOrbit2 {
     from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
     to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
@@ -118,27 +201,6 @@
     from { transform: rotate(0deg) translateX(-500px) rotate(0deg); }
     to   { transform: rotate(360deg) translateX(-500px) rotate(-360deg); }
 }
-
-.child3 {
-  
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    left: 460px;
-    top: 460px;
-    
-
-   
-    -webkit-animation: myOrbit3 60s linear infinite; /* Chrome, Safari 5 */
-       -moz-animation: myOrbit3 60s linear infinite; /* Firefox 5-15 */
-         -o-animation: myOrbit3 60s linear infinite; /* Opera 12+ */
-            animation: myOrbit3 60s linear infinite; /* Chrome, Firefox 16+, 
-                                                      IE 10+, Safari 5 */
-    
-    
-    
-}
-
 
 @-webkit-keyframes myOrbit3 {
     from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
@@ -160,24 +222,6 @@
     to   { transform: rotate(360deg) translateY(500px) rotate(-360deg); }
 }
 
-.child4 {
-    
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    left: 460px;
-    top: 460px;
-    
-    -webkit-animation: myOrbit4 60s linear infinite; /* Chrome, Safari 5 */
-       -moz-animation: myOrbit4 60s linear infinite; /* Firefox 5-15 */
-         -o-animation: myOrbit4 60s linear infinite; /* Opera 12+ */
-            animation: myOrbit4 60s linear infinite; /* Chrome, Firefox 16+, 
-                                                      IE 10+, Safari 5 */
-    
-    
-    
-}
-
 @-webkit-keyframes myOrbit4 {
     from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
     to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
@@ -197,3 +241,4 @@
     from { transform: rotate(0deg) translateY(-500px) rotate(0deg); }
     to   { transform: rotate(360deg) translateY(-500px) rotate(-360deg); }
 }
+
