@@ -12,12 +12,15 @@ h1 {
 }
 
 
-input[type=checkbox]:checked + label > div > h1{
+input[type=checkbox]:checked + label > div > h1 {
     transform: scale(2);
     transition: transform 0.50s ease; 
 }
 
-
+.info {
+    position: absolute;
+    transform: scale(0,0);
+}
 
 .backgroundImage {
     background-position: 50% 30%;
@@ -50,7 +53,7 @@ input[type=checkbox]:checked + label > div > h1{
 
 .zoom-out1 {  
       
-    animation: zoom-out 0.5s ease infinite;
+    animation: zoom-out 0.5s ease ;
 }
 
 @keyframes zoom-out {
@@ -64,7 +67,7 @@ input[type=checkbox]:checked + label > div > h1{
 }
 
 .zoom-in {
-  animation: zoom-in 0.5s ease infinite;
+  animation: zoom-in 0.5s ease initial;
 }
 @keyframes zoom-in {
     0% {
