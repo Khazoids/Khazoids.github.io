@@ -31,8 +31,8 @@ a, a:active {
     0px -99px 100px rgba(0, 0, 0, 0.1);
 }
 
-.img-fluid {
-    max-height: 99%
+.showcase .target {
+    max-height: 99%;
 }
 
 .showcase .container-fluid {
