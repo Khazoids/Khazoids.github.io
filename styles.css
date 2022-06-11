@@ -119,3 +119,6 @@ a, a:active {
     font-weight: bolder;
 }
 
+.showcase {
+    min-height: 100vh;
+}
